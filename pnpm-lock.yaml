@@ -15,14 +15,14 @@ importers:
   .:
     dependencies:
       '@kurocado-studio/formkit-ui-models':
-        specifier: 1.0.0-develop.1
-        version: 1.0.0-develop.1
+        specifier: 1.0.0-develop.2
+        version: 1.0.0-develop.2
       '@kurocado-studio/formkit-ui-react-renderer':
         specifier: 1.0.0-develop.8
         version: 1.0.0-develop.8(react-dom@19.0.0(react@19.0.0))(tailwindcss@4.1.17)(typescript@5.9.3)
       '@kurocado-studio/systemhaus-motion-react':
-        specifier: 1.0.0-develop.9
-        version: 1.0.0-develop.9(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))
+        specifier: 1.0.0-develop.10
+        version: 1.0.0-develop.10(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))
       '@kurocado-studio/systemhaus-react':
         specifier: 1.1.0-develop.13
         version: 1.1.0-develop.13(react-dom@19.0.0(react@19.0.0))(tailwindcss@4.1.17)(typescript@5.9.3)
@@ -41,7 +41,7 @@ importers:
     devDependencies:
       '@kurocado-studio/styleguide':
         specifier: 2.6.0-develop.10
-        version: 2.6.0-develop.10(e772d4bcd776ef427c217f0716f85413)
+        version: 2.6.0-develop.10(nkgnmq3bywhkasislichjryzdq)
       '@tailwindcss/postcss':
         specifier: ^4.1.13
         version: 4.1.17
@@ -722,8 +722,8 @@ packages:
   '@kurocado-studio/axios-react@1.1.2-develop.1':
     resolution: {integrity: sha512-ihhsCdowFwzc+Xkjr5wPZ52RR8Uln+lnsBMYUk7rQa8Rp90/t4M4nO8vPv5wWouElmyqQoBsiDZAdQqnwbQsqQ==}
 
-  '@kurocado-studio/formkit-ui-models@1.0.0-develop.1':
-    resolution: {integrity: sha512-i+XisxBp4f6e6YRbuFOVj1YQIlk7nJbvJ+w1mf0fwf/ARDrliUibhJiSnx009+SvybZVdZI5p/WqBpuDJsVzZA==}
+  '@kurocado-studio/formkit-ui-models@1.0.0-develop.2':
+    resolution: {integrity: sha512-px0UC51nLRR5dTvlXZzQOFSVZL46PzmQWN5Wji+4sQJ4NwkMxXgVHvScGrCWg82+9oKnqCkSK5j6g2VidJnHQg==}
 
   '@kurocado-studio/formkit-ui-react-renderer@1.0.0-develop.8':
     resolution: {integrity: sha512-Kx8amCMTkZmdUeG82FJIgKmROom0DXNrSa/B+hNqrF9Gq+XqCUfZzv3xBgcfUgoQKO76Cot8QfzYTEUWdc85EA==}
@@ -778,8 +778,8 @@ packages:
       vite-tsconfig-paths: ^5.1.4
       vue-eslint-parser: ^10.1.3
 
-  '@kurocado-studio/systemhaus-motion-react@1.0.0-develop.9':
-    resolution: {integrity: sha512-LANs5VR9jeDBI4jYCm0HesWBoOsEE32/m6UPVdqKMYnCYfQdxMujelYbksZt4abO1cA+JrufdraVQ8m1tL7nXw==}
+  '@kurocado-studio/systemhaus-motion-react@1.0.0-develop.10':
+    resolution: {integrity: sha512-Zk40UN+2KlB0UqR7r9hqyo7O0/PsGa7qO7ygfUgdQ2A0A07kELSgS9vKIQf4TsuE9MKT9AP7Glg92QfyAoSovw==}
 
   '@kurocado-studio/systemhaus-react@1.1.0-develop.12':
     resolution: {integrity: sha512-zJgk0TtBN9SgqC6z0UT3/TQxbQ9arBCFJjZkZbJBrDNT1h5LAy6886AUZMyfmeQSZCHQ7LiJ3pEZYqhMRGOvig==}
@@ -7061,7 +7061,7 @@ snapshots:
       - debug
       - typescript
 
-  '@kurocado-studio/formkit-ui-models@1.0.0-develop.1':
+  '@kurocado-studio/formkit-ui-models@1.0.0-develop.2':
     dependencies:
       uuid: 13.0.0
 
@@ -7080,7 +7080,7 @@ snapshots:
       - tailwindcss
       - typescript
 
-  '@kurocado-studio/styleguide@2.6.0-develop.10(e772d4bcd776ef427c217f0716f85413)':
+  '@kurocado-studio/styleguide@2.6.0-develop.10(nkgnmq3bywhkasislichjryzdq)':
     dependencies:
       '@babel/eslint-parser': 7.28.5(@babel/core@7.28.5)(eslint@9.39.1(jiti@2.6.1))
       '@commitlint/cli': 20.1.0(@types/node@24.10.1)(typescript@5.9.3)
@@ -7128,7 +7128,7 @@ snapshots:
       vite-tsconfig-paths: 5.1.4(typescript@5.9.3)(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.1))
       vue-eslint-parser: 10.2.0(eslint@9.39.1(jiti@2.6.1))
 
-  '@kurocado-studio/systemhaus-motion-react@1.0.0-develop.9(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))':
+  '@kurocado-studio/systemhaus-motion-react@1.0.0-develop.10(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))':
     dependencies:
       framer-motion: 12.23.24(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       lodash-es: 4.17.21
