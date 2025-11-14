@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": ["@kurocado-studio/styleguide/typescript/tsconfig.react.json"],
   "compilerOptions": {
-    "types": ["@types/react", "vitest/globals", "@testing-library/jest-dom"],
+    "types": ["@types/react"],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "rootDir": ".",
