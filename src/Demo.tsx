@@ -17,7 +17,7 @@ export function Demo() {
   };
 
   return (
-    <Card className='mx-auto max-w-screen-lg'>
+    <Card className='mx-auto max-w-screen-sm'>
       <Card.Header>
         <h1>Hello CodeSandbox</h1>
         <h2>Start editing to see some magic happen!</h2>
