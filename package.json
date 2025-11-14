@@ -31,7 +31,7 @@
     "@kurocado-studio/formkit-ui-models": "1.0.0-develop.2",
     "@kurocado-studio/formkit-ui-react-renderer": "1.0.0-develop.8",
     "@kurocado-studio/systemhaus-motion-react": "1.0.0-develop.10",
-    "@kurocado-studio/systemhaus-react": "1.1.0-develop.13",
+    "@kurocado-studio/systemhaus-react": "1.1.0",
     "axios": "^1.13.2",
     "lodash-es": "^4.17.21",
     "react": "^19.0.0",
