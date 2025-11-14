@@ -24,8 +24,8 @@ importers:
         specifier: 1.0.0-develop.10
         version: 1.0.0-develop.10(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))
       '@kurocado-studio/systemhaus-react':
-        specifier: 1.1.0-develop.13
-        version: 1.1.0-develop.13(react-dom@19.0.0(react@19.0.0))(tailwindcss@4.1.17)(typescript@5.9.3)
+        specifier: 1.1.0
+        version: 1.1.0(@vueuse/core@14.0.0(vue@3.5.24(typescript@5.9.3)))(react-dom@19.0.0(react@19.0.0))(tailwindcss@4.1.17)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
       axios:
         specifier: ^1.13.2
         version: 1.13.2
@@ -41,7 +41,7 @@ importers:
     devDependencies:
       '@kurocado-studio/styleguide':
         specifier: 2.6.0-develop.10
-        version: 2.6.0-develop.10(nkgnmq3bywhkasislichjryzdq)
+        version: 2.6.0-develop.10(e772d4bcd776ef427c217f0716f85413)
       '@tailwindcss/postcss':
         specifier: ^4.1.13
         version: 4.1.17
@@ -781,11 +781,11 @@ packages:
   '@kurocado-studio/systemhaus-motion-react@1.0.0-develop.10':
     resolution: {integrity: sha512-Zk40UN+2KlB0UqR7r9hqyo7O0/PsGa7qO7ygfUgdQ2A0A07kELSgS9vKIQf4TsuE9MKT9AP7Glg92QfyAoSovw==}
 
+  '@kurocado-studio/systemhaus-react@1.1.0':
+    resolution: {integrity: sha512-K0X/pNrUa4/4UuJBG1YLcdeAHv7QLLCjoOYLKyCd46O6ojAfnbdJQCBrpIQTFVmafHWQybi7sGofH7Pcnzco3A==}
+
   '@kurocado-studio/systemhaus-react@1.1.0-develop.12':
     resolution: {integrity: sha512-zJgk0TtBN9SgqC6z0UT3/TQxbQ9arBCFJjZkZbJBrDNT1h5LAy6886AUZMyfmeQSZCHQ7LiJ3pEZYqhMRGOvig==}
-
-  '@kurocado-studio/systemhaus-react@1.1.0-develop.13':
-    resolution: {integrity: sha512-yg97SMUiSbltJqNnyR6ajDxvwv0dxlXfBViIOtOjX+Cpx2+RDOxveZh78voKLPpoA8y+dcWNA1agofR6P+cSYg==}
 
   '@kurocado-studio/web-forms-react@1.1.0-develop.2':
     resolution: {integrity: sha512-FH6o+JxEH5XmfnQkt3ni+5rpubFwpQ/pUG5XMLqDltL00aJ9he+aBdlonyA8/gVWyxuJ7/o1mfueMhFpRSnmpQ==}
@@ -2011,6 +2011,9 @@ packages:
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
 
+  '@types/web-bluetooth@0.0.21':
+    resolution: {integrity: sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==}
+
   '@typescript-eslint/eslint-plugin@8.46.4':
     resolution: {integrity: sha512-R48VhmTJqplNyDxCyqqVkFSZIx1qX6PzwqgcXn1olLrzxcSBDlOsbtcnQuQhNtnNiJ4Xe5gREI1foajYaYU2Vg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -2258,6 +2261,19 @@ packages:
 
   '@vue/shared@3.5.24':
     resolution: {integrity: sha512-9cwHL2EsJBdi8NY22pngYYWzkTDhld6fAD6jlaeloNGciNSJL6bLpbxVgXl96X00Jtc6YWQv96YA/0sxex/k1A==}
+
+  '@vueuse/core@14.0.0':
+    resolution: {integrity: sha512-d6tKRWkZE8IQElX2aHBxXOMD478fHIYV+Dzm2y9Ag122ICBpNKtGICiXKOhWU3L1kKdttDD9dCMS4bGP3jhCTQ==}
+    peerDependencies:
+      vue: ^3.5.0
+
+  '@vueuse/metadata@14.0.0':
+    resolution: {integrity: sha512-6yoGqbJcMldVCevkFiHDBTB1V5Hq+G/haPlGIuaFZHpXC0HADB0EN1ryQAAceiW+ryS3niUwvdFbGiqHqBrfVA==}
+
+  '@vueuse/shared@14.0.0':
+    resolution: {integrity: sha512-mTCA0uczBgurRlwVaQHfG0Ja7UdGe4g9mwffiJmvLiTtp1G4AQyIjej6si/k8c8pUwTfVpNufck+23gXptPAkw==}
+    peerDependencies:
+      vue: ^3.5.0
 
   '@web3-storage/multipart-parser@1.0.0':
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
@@ -3481,6 +3497,20 @@ packages:
   fraction.js@5.3.4:
     resolution: {integrity: sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ==}
 
+  framer-motion@12.23.12:
+    resolution: {integrity: sha512-6e78rdVtnBvlEVgu6eFEAgG9v3wLnYEboM8I5O5EXvfKC8gxGQB8wXJdhkMy10iVcn05jl6CNw7/HTsTCfwcWg==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: 19.0.0
+      react-dom: 19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   framer-motion@12.23.24:
     resolution: {integrity: sha512-HMi5HRoRCTou+3fb3h9oTLyJGBxHfW+HnNE25tAXOvVx/IvwMHK0cx7IR4a2ZU6sh3IX1Z+4ts32PcYBOqka8w==}
     peerDependencies:
@@ -3702,6 +3732,9 @@ packages:
   he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+
+  hey-listen@1.0.8:
+    resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
 
   highlight.js@10.7.3:
     resolution: {integrity: sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==}
@@ -4601,11 +4634,34 @@ packages:
   modern-ahocorasick@1.1.0:
     resolution: {integrity: sha512-sEKPVl2rM+MNVkGQt3ChdmD8YsigmXdn5NifZn6jiwn9LRJpWm8F3guhaqrJT/JOat6pwpbXEk6kv+b9DMIjsQ==}
 
+  motion-dom@12.23.12:
+    resolution: {integrity: sha512-RcR4fvMCTESQBD/uKQe49D5RUeDOokkGRmz4ceaJKDBgHYtZtntC/s2vLvY38gqGaytinij/yi3hMcWVcEF5Kw==}
+
   motion-dom@12.23.23:
     resolution: {integrity: sha512-n5yolOs0TQQBRUFImrRfs/+6X4p3Q4n1dUEqt/H58Vx7OW6RF+foWEgmTVDhIWJIMXOuNNL0apKH2S16en9eiA==}
 
   motion-utils@12.23.6:
     resolution: {integrity: sha512-eAWoPgr4eFEOFfg2WjIsMoqJTW6Z8MTUCgn/GZ3VRpClWBdnbjryiA3ZSNLyxCTmCQx4RmYX6jX1iWHbenUPNQ==}
+
+  motion-v@1.7.4:
+    resolution: {integrity: sha512-YNDUAsany04wfI7YtHxQK3kxzNvh+OdFUk9GpA3+hMt7j6P+5WrVAAgr8kmPPoVza9EsJiAVhqoN3YYFN0Twrw==}
+    peerDependencies:
+      '@vueuse/core': '>=10.0.0'
+      vue: '>=3.0.0'
+
+  motion@12.23.24:
+    resolution: {integrity: sha512-Rc5E7oe2YZ72N//S3QXGzbnXgqNrTESv8KKxABR20q2FLch9gHLo0JLyYo2hZ238bZ9Gx6cWhj9VO0IgwbMjCw==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: 19.0.0
+      react-dom: 19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -7080,7 +7136,7 @@ snapshots:
       - tailwindcss
       - typescript
 
-  '@kurocado-studio/styleguide@2.6.0-develop.10(nkgnmq3bywhkasislichjryzdq)':
+  '@kurocado-studio/styleguide@2.6.0-develop.10(e772d4bcd776ef427c217f0716f85413)':
     dependencies:
       '@babel/eslint-parser': 7.28.5(@babel/core@7.28.5)(eslint@9.39.1(jiti@2.6.1))
       '@commitlint/cli': 20.1.0(@types/node@24.10.1)(typescript@5.9.3)
@@ -7137,27 +7193,31 @@ snapshots:
       - '@emotion/is-prop-valid'
       - react-dom
 
-  '@kurocado-studio/systemhaus-react@1.1.0-develop.12(react-dom@19.0.0(react@19.0.0))(tailwindcss@4.1.17)(typescript@5.9.3)':
+  '@kurocado-studio/systemhaus-react@1.1.0(@vueuse/core@14.0.0(vue@3.5.24(typescript@5.9.3)))(react-dom@19.0.0(react@19.0.0))(tailwindcss@4.1.17)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))':
     dependencies:
       '@emotion/is-prop-valid': 1.4.0
       '@headlessui/react': 2.2.9(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@kurocado-studio/axios-react': 1.1.2-develop.1(typescript@5.9.3)
+      '@kurocado-studio/axios-react': 1.0.2(typescript@5.9.3)
       '@react-aria/button': 3.14.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@react-aria/textfield': 3.18.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tailwindcss/typography': 0.5.19(tailwindcss@4.1.17)
       axios: 1.13.2
       framer-motion: 12.23.24(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       lodash-es: 4.17.21
+      motion: 12.23.24(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      motion-v: 1.7.4(@emotion/is-prop-valid@1.4.0)(@vueuse/core@14.0.0(vue@3.5.24(typescript@5.9.3)))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(vue@3.5.24(typescript@5.9.3))
       react: 19.0.0
       tailwind-merge: 3.4.0
       tailwind-variants: 2.1.0(tailwind-merge@3.4.0)(tailwindcss@4.1.17)
     transitivePeerDependencies:
+      - '@vueuse/core'
       - debug
       - react-dom
       - tailwindcss
       - typescript
+      - vue
 
-  '@kurocado-studio/systemhaus-react@1.1.0-develop.13(react-dom@19.0.0(react@19.0.0))(tailwindcss@4.1.17)(typescript@5.9.3)':
+  '@kurocado-studio/systemhaus-react@1.1.0-develop.12(react-dom@19.0.0(react@19.0.0))(tailwindcss@4.1.17)(typescript@5.9.3)':
     dependencies:
       '@emotion/is-prop-valid': 1.4.0
       '@headlessui/react': 2.2.9(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -8962,6 +9022,8 @@ snapshots:
 
   '@types/unist@2.0.11': {}
 
+  '@types/web-bluetooth@0.0.21': {}
+
   '@typescript-eslint/eslint-plugin@8.46.4(@typescript-eslint/parser@8.46.4(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
@@ -9299,6 +9361,19 @@ snapshots:
       vue: 3.5.24(typescript@5.9.3)
 
   '@vue/shared@3.5.24': {}
+
+  '@vueuse/core@14.0.0(vue@3.5.24(typescript@5.9.3))':
+    dependencies:
+      '@types/web-bluetooth': 0.0.21
+      '@vueuse/metadata': 14.0.0
+      '@vueuse/shared': 14.0.0(vue@3.5.24(typescript@5.9.3))
+      vue: 3.5.24(typescript@5.9.3)
+
+  '@vueuse/metadata@14.0.0': {}
+
+  '@vueuse/shared@14.0.0(vue@3.5.24(typescript@5.9.3))':
+    dependencies:
+      vue: 3.5.24(typescript@5.9.3)
 
   '@web3-storage/multipart-parser@1.0.0': {}
 
@@ -10711,6 +10786,16 @@ snapshots:
 
   fraction.js@5.3.4: {}
 
+  framer-motion@12.23.12(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      motion-dom: 12.23.23
+      motion-utils: 12.23.6
+      tslib: 2.8.1
+    optionalDependencies:
+      '@emotion/is-prop-valid': 1.4.0
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+
   framer-motion@12.23.24(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       motion-dom: 12.23.23
@@ -10952,6 +11037,8 @@ snapshots:
   hast-util-whitespace@2.0.1: {}
 
   he@1.2.0: {}
+
+  hey-listen@1.0.8: {}
 
   highlight.js@10.7.3: {}
 
@@ -11951,11 +12038,36 @@ snapshots:
 
   modern-ahocorasick@1.1.0: {}
 
+  motion-dom@12.23.12:
+    dependencies:
+      motion-utils: 12.23.6
+
   motion-dom@12.23.23:
     dependencies:
       motion-utils: 12.23.6
 
   motion-utils@12.23.6: {}
+
+  motion-v@1.7.4(@emotion/is-prop-valid@1.4.0)(@vueuse/core@14.0.0(vue@3.5.24(typescript@5.9.3)))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(vue@3.5.24(typescript@5.9.3)):
+    dependencies:
+      '@vueuse/core': 14.0.0(vue@3.5.24(typescript@5.9.3))
+      framer-motion: 12.23.12(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      hey-listen: 1.0.8
+      motion-dom: 12.23.12
+      vue: 3.5.24(typescript@5.9.3)
+    transitivePeerDependencies:
+      - '@emotion/is-prop-valid'
+      - react
+      - react-dom
+
+  motion@12.23.24(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      framer-motion: 12.23.24(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      tslib: 2.8.1
+    optionalDependencies:
+      '@emotion/is-prop-valid': 1.4.0
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   mri@1.2.0: {}
 
