@@ -7,7 +7,7 @@
   "scripts": {
     "build": "vite build",
     "commitlint": "pnpm exec commitlint --edit .git/COMMIT_EDITMSG",
-    "clean": "rm -rf node_modules pnpm.lock dist",
+    "clean": "rm -rf node_modules pnpm.lock dist && pnpm i",
     "dev": "cross-env VITE_NODE_ENV=local vite",
     "eslint-check": "eslint --max-warnings=0 . --debug",
     "eslint-fix": "eslint --max-warnings=0 . --fix --no-warn-ignored",
@@ -20,9 +20,7 @@
     "setup": "pnpm clean && pnpm i && pnpm build"
   },
   "lint-staged": {
-    "*": [
-      "pnpm run prettier-fix"
-    ],
+    "*": ["pnpm run prettier-fix"],
     "**/*.{ts,tsx}": [
       "pnpm run prettier-fix",
       "pnpm run eslint-fix",
@@ -41,6 +39,7 @@
   },
   "devDependencies": {
     "@kurocado-studio/styleguide": "2.6.0-develop.10",
+    "@tailwindcss/postcss": "^4.1.13",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.13",
     "@types/lodash-es": "^4.17.12",
@@ -48,11 +47,17 @@
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
     "autoprefixer": "^10.4.21",
+    "commitlint": "^20.1.0",
     "cross-env": "^10.0.0",
+    "eslint": "^9.23.0",
     "husky": "^9.1.7",
+    "import": "^0.0.6",
+    "lint-staged": "^16.2.6",
     "loader-utils": "3.2.1",
     "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.14",
+    "semantic-release": "^23.1.1",
     "tailwindcss": "^4.1.11",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.8.2",
@@ -74,8 +79,6 @@
     "rollup": "4.52.0"
   },
   "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
+    "extends": ["plugin:storybook/recommended"]
   }
 }

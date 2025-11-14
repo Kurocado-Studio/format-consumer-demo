@@ -23,7 +23,7 @@ if (rootElement) {
       <ThemeProvider
         LoaderComponent={FullScreenLoader}
         progressOptions={{
-          minimumDelay: 150
+          minimumDelay: 150,
         }}
         organizationId={KUROCADO_STUDIO_ORGANIZATION_ID_SYSTEMHAUS}
         themeId={KUROCADO_STUDIO_DEFAULT_THEME_ID}
