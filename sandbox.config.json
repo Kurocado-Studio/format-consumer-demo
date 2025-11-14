@@ -1,0 +1,13 @@
+{
+  "hardReloadOnChange": true,
+  "template": "node",
+  "container": {
+    "port": 5173,
+    "node": "20",
+    "installCommand": "pnpm install",
+    "startCommand": "pnpm dev"
+  },
+  "inferredTools": {
+    "vite": true
+  }
+}

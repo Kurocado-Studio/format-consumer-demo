@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "tasks": {
+    "dev": {
+      "name": "Start Dev Server",
+      "command": "pnpm dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 5173
+      }
+    },
+
+    "build": {
+      "name": "Build",
+      "command": "pnpm build"
+    },
+
+    "typecheck": {
+      "name": "Type Check",
+      "command": "pnpm typecheck"
+    },
+
+    "lint": {
+      "name": "Lint",
+      "command": "pnpm lint"
+    },
+
+    "prettier-fix": {
+      "name": "Prettier Fix",
+      "command": "pnpm prettier-fix"
+    },
+
+    "setup": {
+      "name": "Setup Project",
+      "command": "pnpm setup"
+    }
+  }
+}
